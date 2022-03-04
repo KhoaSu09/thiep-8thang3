@@ -1,0 +1,27 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#lbp-text-body {
+    font-size: 60px;
+    background: blue;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+@media only screen and (max-width: 300px) {
+    #lbp-text-body {
+        background: rgb(0, 0, 0);
+        font-size: 20px;
+        color: brown;
+    }
+}
+    @media only screen and (min-width: 800px) {
+        #lbp-text-body {
+            background: green;
+            font-size: 100px;
+            color: blueviolet;
+        }
+    }

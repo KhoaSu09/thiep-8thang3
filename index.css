@@ -1,0 +1,480 @@
+body {
+    background: #fff;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    font-family: "Anton", sans-serif;
+    justify-content: center;
+    align-items: center;
+    perspective: 1300px;
+  }
+  
+  div {
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  
+  #chocolate_rains {
+    transform: rotateX(-15deg);
+  }
+  
+  .heart .ring {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    opacity: 0;
+    border: 1px solid rgb(255, 0, 13);
+    src: url(pictures/1.jpeg);
+  }
+  .heart .left {
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    background: #c80000;
+    border-radius: 100%;
+    transform-origin: 100% 0;
+    src: url(pictures/1.jpg);
+  }
+  .heart .left::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 20px;
+    height: 25px;
+    background: #c80000;
+    border-radius: 0 0 0 100%;
+  }
+  .heart .right {
+    width: 20px;
+    height: 20px;
+    background: #c80000;
+    border-radius: 100%;
+    transform-origin: 0 0;
+  }
+  .heart .right::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 20px;
+    height: 25px;
+    background: #c80000;
+    border-radius: 0 0 100% 0;
+  }
+  .heart .movable {
+    opacity: 0;
+  }
+  .heart .reverse {
+    transform: translateY(70px) rotateZ(180deg);
+    opacity: 0.1;
+  }
+  .heart .reverse .left, .heart .reverse .right {
+    opacity: 0.5;
+  }
+  .heart:nth-child(1) {
+    transform: translateX(-325px) translateZ(541px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(1) .movable {
+    animation: drop 5000ms 1035ms linear infinite;
+  }
+  .heart:nth-child(1) .ring {
+    animation: wave 5000ms 4935ms ease-out infinite;
+  }
+  .heart:nth-child(1) .inner {
+    animation: rotation 3701ms linear infinite;
+  }
+  .heart:nth-child(2) {
+    transform: translateX(195px) translateZ(491px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(2) .movable {
+    animation: drop 5000ms 664ms linear infinite;
+  }
+  .heart:nth-child(2) .ring {
+    animation: wave 5000ms 4564ms ease-out infinite;
+  }
+  .heart:nth-child(2) .inner {
+    animation: rotation 3369ms linear infinite;
+  }
+  .heart:nth-child(3) {
+    transform: translateX(359px) translateZ(-70px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(3) .movable {
+    animation: drop 5000ms -2204ms linear infinite;
+  }
+  .heart:nth-child(3) .ring {
+    animation: wave 5000ms 1696ms ease-out infinite;
+  }
+  .heart:nth-child(3) .inner {
+    animation: rotation 3537ms linear infinite;
+  }
+  .heart:nth-child(4) {
+    transform: translateX(285px) translateZ(-341px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(4) .movable {
+    animation: drop 5000ms -2865ms linear infinite;
+  }
+  .heart:nth-child(4) .ring {
+    animation: wave 5000ms 1035ms ease-out infinite;
+  }
+  .heart:nth-child(4) .inner {
+    animation: rotation 2643ms linear infinite;
+  }
+  .heart:nth-child(5) {
+    transform: translateX(71px) translateZ(302px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(5) .movable {
+    animation: drop 5000ms -416ms linear infinite;
+  }
+  .heart:nth-child(5) .ring {
+    animation: wave 5000ms 3484ms ease-out infinite;
+  }
+  .heart:nth-child(5) .inner {
+    animation: rotation 2738ms linear infinite;
+  }
+  .heart:nth-child(6) {
+    transform: translateX(-136px) translateZ(753px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(6) .movable {
+    animation: drop 5000ms -1033ms linear infinite;
+  }
+  .heart:nth-child(6) .ring {
+    animation: wave 5000ms 2867ms ease-out infinite;
+  }
+  .heart:nth-child(6) .inner {
+    animation: rotation 2011ms linear infinite;
+  }
+  .heart:nth-child(7) {
+    transform: translateX(432px) translateZ(118px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(7) .movable {
+    animation: drop 5000ms -1363ms linear infinite;
+  }
+  .heart:nth-child(7) .ring {
+    animation: wave 5000ms 2537ms ease-out infinite;
+  }
+  .heart:nth-child(7) .inner {
+    animation: rotation 3591ms linear infinite;
+  }
+  .heart:nth-child(8) {
+    transform: translateX(-101px) translateZ(177px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(8) .movable {
+    animation: drop 5000ms 1863ms linear infinite;
+  }
+  .heart:nth-child(8) .ring {
+    animation: wave 5000ms 5763ms ease-out infinite;
+  }
+  .heart:nth-child(8) .inner {
+    animation: rotation 2200ms linear infinite;
+  }
+  .heart:nth-child(9) {
+    transform: translateX(481px) translateZ(-118px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(9) .movable {
+    animation: drop 5000ms 1987ms linear infinite;
+  }
+  .heart:nth-child(9) .ring {
+    animation: wave 5000ms 5887ms ease-out infinite;
+  }
+  .heart:nth-child(9) .inner {
+    animation: rotation 4342ms linear infinite;
+  }
+  .heart:nth-child(10) {
+    transform: translateX(414px) translateZ(273px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(10) .movable {
+    animation: drop 5000ms 511ms linear infinite;
+  }
+  .heart:nth-child(10) .ring {
+    animation: wave 5000ms 4411ms ease-out infinite;
+  }
+  .heart:nth-child(10) .inner {
+    animation: rotation 3423ms linear infinite;
+  }
+  .heart:nth-child(11) {
+    transform: translateX(117px) translateZ(330px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(11) .movable {
+    animation: drop 5000ms 945ms linear infinite;
+  }
+  .heart:nth-child(11) .ring {
+    animation: wave 5000ms 4845ms ease-out infinite;
+  }
+  .heart:nth-child(11) .inner {
+    animation: rotation 4743ms linear infinite;
+  }
+  .heart:nth-child(12) {
+    transform: translateX(-123px) translateZ(-551px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(12) .movable {
+    animation: drop 5000ms -2449ms linear infinite;
+  }
+  .heart:nth-child(12) .ring {
+    animation: wave 5000ms 1451ms ease-out infinite;
+  }
+  .heart:nth-child(12) .inner {
+    animation: rotation 2744ms linear infinite;
+  }
+  .heart:nth-child(13) {
+    transform: translateX(420px) translateZ(778px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(13) .movable {
+    animation: drop 5000ms -2871ms linear infinite;
+  }
+  .heart:nth-child(13) .ring {
+    animation: wave 5000ms 1029ms ease-out infinite;
+  }
+  .heart:nth-child(13) .inner {
+    animation: rotation 4928ms linear infinite;
+  }
+  .heart:nth-child(14) {
+    transform: translateX(57px) translateZ(-582px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(14) .movable {
+    animation: drop 5000ms -51ms linear infinite;
+  }
+  .heart:nth-child(14) .ring {
+    animation: wave 5000ms 3849ms ease-out infinite;
+  }
+  .heart:nth-child(14) .inner {
+    animation: rotation 3271ms linear infinite;
+  }
+  .heart:nth-child(15) {
+    transform: translateX(394px) translateZ(45px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(15) .movable {
+    animation: drop 5000ms 1854ms linear infinite;
+  }
+  .heart:nth-child(15) .ring {
+    animation: wave 5000ms 5754ms ease-out infinite;
+  }
+  .heart:nth-child(15) .inner {
+    animation: rotation 3002ms linear infinite;
+  }
+  .heart:nth-child(16) {
+    transform: translateX(334px) translateZ(-489px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(16) .movable {
+    animation: drop 5000ms -990ms linear infinite;
+  }
+  .heart:nth-child(16) .ring {
+    animation: wave 5000ms 2910ms ease-out infinite;
+  }
+  .heart:nth-child(16) .inner {
+    animation: rotation 4981ms linear infinite;
+  }
+  .heart:nth-child(17) {
+    transform: translateX(47px) translateZ(287px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(17) .movable {
+    animation: drop 5000ms -1150ms linear infinite;
+  }
+  .heart:nth-child(17) .ring {
+    animation: wave 5000ms 2750ms ease-out infinite;
+  }
+  .heart:nth-child(17) .inner {
+    animation: rotation 3113ms linear infinite;
+  }
+  .heart:nth-child(18) {
+    transform: translateX(362px) translateZ(-790px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(18) .movable {
+    animation: drop 5000ms 444ms linear infinite;
+  }
+  .heart:nth-child(18) .ring {
+    animation: wave 5000ms 4344ms ease-out infinite;
+  }
+  .heart:nth-child(18) .inner {
+    animation: rotation 4504ms linear infinite;
+  }
+  .heart:nth-child(19) {
+    transform: translateX(-144px) translateZ(-727px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(19) .movable {
+    animation: drop 5000ms -453ms linear infinite;
+  }
+  .heart:nth-child(19) .ring {
+    animation: wave 5000ms 3447ms ease-out infinite;
+  }
+  .heart:nth-child(19) .inner {
+    animation: rotation 3860ms linear infinite;
+  }
+  .heart:nth-child(20) {
+    transform: translateX(306px) translateZ(8px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(20) .movable {
+    animation: drop 5000ms -2419ms linear infinite;
+  }
+  .heart:nth-child(20) .ring {
+    animation: wave 5000ms 1481ms ease-out infinite;
+  }
+  .heart:nth-child(20) .inner {
+    animation: rotation 3573ms linear infinite;
+  }
+  .heart:nth-child(21) {
+    transform: translateX(484px) translateZ(124px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(21) .movable {
+    animation: drop 5000ms -461ms linear infinite;
+  }
+  .heart:nth-child(21) .ring {
+    animation: wave 5000ms 3439ms ease-out infinite;
+  }
+  .heart:nth-child(21) .inner {
+    animation: rotation 3149ms linear infinite;
+  }
+  .heart:nth-child(22) {
+    transform: translateX(-410px) translateZ(-371px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(22) .movable {
+    animation: drop 5000ms 556ms linear infinite;
+  }
+  .heart:nth-child(22) .ring {
+    animation: wave 5000ms 4456ms ease-out infinite;
+  }
+  .heart:nth-child(22) .inner {
+    animation: rotation 3934ms linear infinite;
+  }
+  .heart:nth-child(23) {
+    transform: translateX(-41px) translateZ(125px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(23) .movable {
+    animation: drop 5000ms -1175ms linear infinite;
+  }
+  .heart:nth-child(23) .ring {
+    animation: wave 5000ms 2725ms ease-out infinite;
+  }
+  .heart:nth-child(23) .inner {
+    animation: rotation 4447ms linear infinite;
+  }
+  .heart:nth-child(24) {
+    transform: translateX(-74px) translateZ(301px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(24) .movable {
+    animation: drop 5000ms -202ms linear infinite;
+  }
+  .heart:nth-child(24) .ring {
+    animation: wave 5000ms 3698ms ease-out infinite;
+  }
+  .heart:nth-child(24) .inner {
+    animation: rotation 4124ms linear infinite;
+  }
+  .heart:nth-child(25) {
+    transform: translateX(289px) translateZ(15px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(25) .movable {
+    animation: drop 5000ms -1564ms linear infinite;
+  }
+  .heart:nth-child(25) .ring {
+    animation: wave 5000ms 2336ms ease-out infinite;
+  }
+  .heart:nth-child(25) .inner {
+    animation: rotation 2840ms linear infinite;
+  }
+  .heart:nth-child(26) {
+    transform: translateX(218px) translateZ(-504px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(26) .movable {
+    animation: drop 5000ms 1858ms linear infinite;
+  }
+  .heart:nth-child(26) .ring {
+    animation: wave 5000ms 5758ms ease-out infinite;
+  }
+  .heart:nth-child(26) .inner {
+    animation: rotation 4380ms linear infinite;
+  }
+  .heart:nth-child(27) {
+    transform: translateX(-189px) translateZ(349px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(27) .movable {
+    animation: drop 5000ms -2898ms linear infinite;
+  }
+  .heart:nth-child(27) .ring {
+    animation: wave 5000ms 1002ms ease-out infinite;
+  }
+  .heart:nth-child(27) .inner {
+    animation: rotation 2868ms linear infinite;
+  }
+  .heart:nth-child(28) {
+    transform: translateX(-389px) translateZ(580px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(28) .movable {
+    animation: drop 5000ms 1084ms linear infinite;
+  }
+  .heart:nth-child(28) .ring {
+    animation: wave 5000ms 4984ms ease-out infinite;
+  }
+  .heart:nth-child(28) .inner {
+    animation: rotation 4760ms linear infinite;
+  }
+  .heart:nth-child(29) {
+    transform: translateX(82px) translateZ(-159px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(29) .movable {
+    animation: drop 5000ms -1108ms linear infinite;
+  }
+  .heart:nth-child(29) .ring {
+    animation: wave 5000ms 2792ms ease-out infinite;
+  }
+  .heart:nth-child(29) .inner {
+    animation: rotation 2066ms linear infinite;
+  }
+  .heart:nth-child(30) {
+    transform: translateX(7px) translateZ(362px) scale3d(0.5, 0.5, 0.5);
+  }
+  .heart:nth-child(30) .movable {
+    animation: drop 5000ms -2204ms linear infinite;
+  }
+  .heart:nth-child(30) .ring {
+    animation: wave 5000ms 1696ms ease-out infinite;
+  }
+  .heart:nth-child(30) .inner {
+    animation: rotation 3232ms linear infinite;
+  }
+  @keyframes blur {
+    0% {
+      filter: blur(20px) grayscale(150%);
+    }
+    100% {
+      filter: blur(10px) grayscale(50%);
+    }
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  @keyframes drop {
+    0% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    80% {
+      transform: translateY(0);
+      opacity: 3;
+    }
+    100% {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+  }
+  @keyframes wave {
+    0% {
+      transform: translate(-50%, -50%) rotateX(90deg) scale(0) translateZ(-37px);
+      opacity: 2;
+    }
+    100% {
+      transform: translate(-50%, -50%) rotateX(90deg) scale(2) translateZ(-37px);
+      opacity: 0;
+    }
+  }
+  @keyframes wing {
+    0% {
+      transform: rotateY(70deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
